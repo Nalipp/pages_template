@@ -83,25 +83,30 @@
               <pre class='textarea'>
                 <code>
                   group :development, :test do
-                    gem 'byebug'
-                    gem 'web-console', '~> 2.0'
-                    gem 'spring'
                     gem 'sqlite3'
+                    gem 'byebug'
+                    gem 'web-console'
+                    gem 'spring'
                   end
                 </code>
               </pre>
               <h3></h3>
                 <pre class='textarea'>
                   <code>
-                    # push to git before pushing to heroku.
-
                     $ bundle install --without production
+                    $ git commit -a -m "update heroku"
                     $ heroku login
                     $ heroku keys:add
                     $ heroku create
                     $ git push heroku master
                   </code>
                 </pre>
+                <h3></h3>
+                  <pre class='textarea'>
+                    <code>
+                    $ heroku rename
+                    </code>
+                  </pre>
                 <h1>provide info for changing links</h1>
             </div>
           </div>
